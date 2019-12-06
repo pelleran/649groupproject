@@ -8,15 +8,15 @@ Anti-Native Hawaiian or Other Pacific Islander,White,8
 Anti-Arab,White,62
 Anti-Hispanic or Latino,White,322
 Anti-Other Race/Ethnicity/Ancestry,White,114
-Anti-White,Black orAfrican American,492
-Anti-Black or African American,Black orAfrican American,115
-Anti-American Indian or Alaska Native,Black orAfrican American,27
-Anti-Asian,Black orAfrican American,33
-Anti-Native Hawaiian or Other Pacific Islander,Black orAfrican American,11
-"Anti-Multiple Races, Group",Black orAfrican American,8
-Anti-Arab,Black orAfrican American,17
-Anti-Hispanic or Latino,Black orAfrican American,152
-Anti-Other Race/Ethnicity/Ancestry,Black orAfrican American,52
+Anti-White,Black or African American,492
+Anti-Black or African American,Black or African American,115
+Anti-American Indian or Alaska Native,Black or African American,27
+Anti-Asian,Black or African American,33
+Anti-Native Hawaiian or Other Pacific Islander,Black or African American,11
+"Anti-Multiple Races, Group",Black or African American,8
+Anti-Arab,Black or African American,17
+Anti-Hispanic or Latino,Black or African American,152
+Anti-Other Race/Ethnicity/Ancestry,Black or African American,52
 Anti-White,American Indian or Alaska Native,20
 Anti-Black or African American,American Indian or Alaska Native,16
 Anti-American Indian or Alaska Native,American Indian or Alaska Native,1
@@ -44,24 +44,15 @@ Anti-Native Hawaiian or Other Pacific Islander,Native Hawaiian or Other Pacific 
 Anti-Arab,Native Hawaiian or Other Pacific Islander,0
 Anti-Hispanic or Latino,Native Hawaiian or Other Pacific Islander,1
 Anti-Other Race/Ethnicity/Ancestry,Native Hawaiian or Other Pacific Islander,0
-Anti-White,"Unknown
-race",36
-Anti-Black or African American,"Unknown
-race",149
-Anti-American Indian or Alaska Native,"Unknown
-race",2
-Anti-Asian,"Unknown
-race",6
-Anti-Native Hawaiian or Other Pacific Islander,"Unknown
-race",0
-"Anti-Multiple Races, Group","Unknown
-race",11
-Anti-Arab,"Unknown
-race",4
-Anti-Hispanic or Latino,"Unknown
-race",47
-Anti-Other Race/Ethnicity/Ancestry,"Unknown
-race",21
+Anti-White,Unknown race,36
+Anti-Black or African American,Unknown race,149
+Anti-American Indian or Alaska Native,Unknown race,2
+Anti-Asian,Unknown race,6
+Anti-Native Hawaiian or Other Pacific Islander,Unknown race,0
+"Anti-Multiple Races, Group",Unknown race,11
+Anti-Arab,Unknown race,4
+Anti-Hispanic or Latino,Unknown race,47
+Anti-Other Race/Ethnicity/Ancestry,Unknown race,21
 Anti-White,Unknown Offender,171
 Anti-Black or African American,Unknown Offender,578
 Anti-American Indian or Alaska Native,Unknown Offender,59
