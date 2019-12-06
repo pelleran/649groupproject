@@ -1,24 +1,55 @@
-,White,"Black or
-African
-American","American
-Indian
-or
-Alaska
-Native",Asian,"Native
-Hawaiian
-or Other
-Pacific
-Islander","Group
-of
-multiple
-races","Unknown
-race",Unknown Offender
-Anti-White,252,492,20,6,1,23,36,171
-Anti-Black or African American,"1,330",115,16,34,3,100,149,578
-Anti-American Indian or Alaska Native,106,27,1,2,0,7,2,59
-Anti-Asian,70,33,0,14,2,4,6,42
-Anti-Native Hawaiian or Other Pacific Islander,8,11,0,0,2,0,0,5
-"Anti-Multiple Races, Group",45,8,0,2,0,15,11,85
-Anti-Arab,62,17,0,1,0,1,4,15
-Anti-Hispanic or Latino,322,152,8,2,1,24,47,88
-Anti-Other Race/Ethnicity/Ancestry,114,52,1,1,0,11,21,117
+Bias Motivation,Known Offender's Race & Ethnicity,Count,,,,
+Anti-White,White,252,,,,
+Anti-Black or African American,White,"1,330",,,,
+Anti-American Indian or Alaska Native,White,106,,,,
+Anti-Asian,White,70,,,,
+Anti-Native Hawaiian or Other Pacific Islander,White,8,,,,
+"Anti-Multiple Races, Group",White,45,,,,
+Anti-Arab,White,62,,,,
+Anti-Hispanic or Latino,White,322,,,,
+Anti-Other Race/Ethnicity/Ancestry,White,114,,,,
+Anti-White,Black orAfrican American,492,,,,
+Anti-Black or African American,Black orAfrican American,115,,,,
+Anti-American Indian or Alaska Native,Black orAfrican American,27,,,,
+Anti-Asian,Black orAfrican American,33,,,,
+Anti-Native Hawaiian or Other Pacific Islander,Black orAfrican American,11,,,,
+"Anti-Multiple Races, Group",Black orAfrican American,8,,,,
+Anti-Arab,Black orAfrican American,17,,,,
+Anti-Hispanic or Latino,Black orAfrican American,152,,,,
+Anti-Other Race/Ethnicity/Ancestry,Black orAfrican American,52,,,,
+Anti-White,American Indian or Alaska Native,20,,,,
+Anti-Black or African American,American Indian or Alaska Native,16,,,,
+Anti-American Indian or Alaska Native,American Indian or Alaska Native,1,,,,
+Anti-Asian,American Indian or Alaska Native,0,,,,
+Anti-Native Hawaiian or Other Pacific Islander,American Indian or Alaska Native,0,,,,
+"Anti-Multiple Races, Group",American Indian or Alaska Native,0,,,,
+Anti-Arab,American Indian or Alaska Native,0,,,,
+Anti-Hispanic or Latino,American Indian or Alaska Native,8,,,,
+Anti-Other Race/Ethnicity/Ancestry,American Indian or Alaska Native,1,,,,
+Anti-White,Asian,6,,,,
+Anti-Black or African American,Asian,34,,,,
+Anti-American Indian or Alaska Native,Asian,2,,,,
+Anti-Asian,Asian,14,,,,
+Anti-Native Hawaiian or Other Pacific Islander,Asian,0,,,,
+"Anti-Multiple Races, Group",Asian,2,,,,
+Anti-Arab,Asian,1,,,,
+Anti-Hispanic or Latino,Asian,2,,,,
+Anti-Other Race/Ethnicity/Ancestry,Asian,1,,,,
+Anti-White,Native Hawaiian or Other Pacific Islander,1,,,,
+Anti-Black or African American,Native Hawaiian or Other Pacific Islander,3,,,,
+Anti-American Indian or Alaska Native,Native Hawaiian or Other Pacific Islander,0,,,,
+Anti-Asian,Native Hawaiian or Other Pacific Islander,2,,,,
+Anti-Native Hawaiian or Other Pacific Islander,Native Hawaiian or Other Pacific Islander,2,,,,
+"Anti-Multiple Races, Group",Native Hawaiian or Other Pacific Islander,0,,,,
+Anti-Arab,Native Hawaiian or Other Pacific Islander,0,,,,
+Anti-Hispanic or Latino,Native Hawaiian or Other Pacific Islander,1,,,,
+Anti-Other Race/Ethnicity/Ancestry,Native Hawaiian or Other Pacific Islander,0,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
