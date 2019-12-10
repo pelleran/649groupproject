@@ -3,12 +3,8 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- added so that the media query will work -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/hatecrime.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
     <title >Hate Crime Visualizations</title>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
@@ -18,7 +14,7 @@
 
 <body>
 
-  <!-- <a href="#content" class="skip">Skip to content</a> -->
+  <a href="#content" class="skip">Skip to content</a>
 
 
   <header>
@@ -32,9 +28,10 @@
 
         <h2>Objective</h2>
 
-        <p>Our general goal is to track trends in hate crimes over time, such as changes in motivation, victims, and perpetrators. We also want to see if there have been meaningful changes in trends of hate-crime before and after the Trump administration to identify at-risk groups and states that should put more resources toward hate crime prevention. Our audience is adults in the United States. We are tracking trends from 2008 (the year President Obama was first elected) through 2018 (the most recent available data) using the FBI’s Hate Crime Statistics datasets.</p>
+        <p>Our general goal is to track trends in hate crimes between 2008 and 2018, focusing on testing our hypothesis that the last presidential election’s outcome changed the tide of hate crimes. We start with a high-level view of all crime biases and drill down to see if these trends are consistent when considered from different perspectives, namely the type of crimes (violent vs non-violent) and the largest bias motivation (race).  We analyze how these phenomena may have changed with the current presidential administration and to compare our findings with others, who have also analyzed the data. We indeed find that trends in hate crime are consistent across different factors. The numbers are high around 2008, there is a trough in 2013/2014 and the numbers rise from there on. The Medium article referred indicates that the current president started campaigning/ considering a political campaign around 2013, right before the major dip in hate crime. While the graphs do not completely explain the correlation between the two (e.g. Which came first: antagonistic rhetoric that exacerbated crime or other social conditions that supported antagonistic rhetoric?), they do show that trends in hate crime have diverged during the time of the Obama and Trump administrations.
+        </p>
 
-        <p>The 2018 data set was released while we were working on our project. Articles have been published discussing the most recent trends, including one by NPR, titled, "FBI Reports Dip In Hate Crimes, But Rise In Violence." </p>
+        <p>We are tracking trends from 2008 (the year President Obama was first elected) through 2018 (the most recent available data) using the FBI’s Hate Crime Statistics datasets.</p>
         
 
 
@@ -43,17 +40,18 @@
       <p>In order to communicate these ideas, we designed four different visualizations:</p>
         
       <ul>
-          <li>A pyramid chart showing the number of victims and offenders of each race</li>
-          <li>A table bubble plot to illustrate the relationship between offenders’ race and ethnicity and bias motivation</li>
-          <li>A stacked line chart shows the change of different types of crime by year</li>
-          <li>A bar chart showing the total number of hate crimes per year and comparing violent crimes (‘crimes against persons’) vs. non-violent crimes (‘crimes against property’)</li>
+          <li>A stacked area chart shows the change of different types of crime by year</li>
+          <li>A bar chart comparing violent crimes vs. non-violent crimes by year</li>
+          <li>A pyramid chart showing the number of victims and offenders of each race over time</li>
+          <li>A table bubble plot to illustrate the relationship between offenders’ race and ethnicity and bias motivation over time</li>
       </ul>
 
 
 
       <section>
             <h3>Hate crime by year</h3>
-            <p>missing insights</p>
+            <p>From 2008 to 2014, there is a gradually decreasing trend of all of the hate crime and hate crime went down to its lowest point in 2014. It goes up again the following year (2015) and reaches a high point again (9160 total in 2008 and 9046 total in 2018). Among the changing, the amount of hate crimes based on sexual orientation, disability, ethnicity and religion did not change a lot in the amount while the hate crimes based on race change largely every year. Surprisingly, even the total amount of hate crimes is similar in 2008 and 2018, the proportion of hate crimes against race is around 50% before 2014 and this changes to 55% from 2015 to 2018.
+            </p>
 
         </section>
 
@@ -82,7 +80,7 @@
 
         <section>
           <h3>Number of crimes against persons vs. number of crimes against property/society</h3>
-          <p>missing insights</p>
+          <p>From 2008 through 2015 there was an overall decreasing trend in the number of hate crimes reported, with the proportion of violent to non-violent crimes staying relatively consistent. However, starting in 2015, the number of hate crimes began rising again, and particularly in 2018, there was a notable increase in violent crimes relative to non-violent crimes.</p>
         </section>
 
         <div id="grouped_bar"></div>
@@ -110,7 +108,32 @@
 
         <section>
           <h3>Offenders and Victims by Race</h3>
-          <p>missing insights</p>
+          <p>The period chart compares victims and offenders side-by-side according to race.  We see that the multiple races and white categories are the only ones in which there are more offenders than victims. This is consistent throughout the 10-year period. The victim and offender sides look imbalanced, which doesn’t indicate that victims are more likely to perpetuate crime. When hate crimes increase or decrease, they tend to do so for all races. For most races, both sides of the pyramid follow the trend of (nearly) peaking in 2008, reaching a minimum or near minimum in 2014, and increasing afterward. For instance:
+          </p>
+
+          <ul>
+            <li>In 2008, there were</li>
+            <ul>
+              <li>4,229 white offenders, 829 white victims, </li>
+              <li>1,399 black offenders, 3,596 black victims, </li>
+              <li>79 Asian/Pacific Islander offenders, and 170 Asian/Pacific Islander victims.</li>
+            </ul>
+            <li>In 2014, there were</li>
+            <ul>
+
+              <li>2,699 white offenders, 734 white victims,</li>
+              <li>1,203 black offenders, 2,022 black victims, </li>
+              <li>41 Asian/Pacific Islander offenders, 205 Asian/Pacific Islander victims (min is 143 in 2015)</li>
+            </ul>
+            <li>In 2018, there were</li>
+            <ul>
+
+              <li>3,359 white offenders, 1,038 white victims</li>
+              <li>1,506 black offenders, 2,426 black victims</li>
+              <li>99 Asian/Pacific Islander offenders, 203 Asian/ Pacific Islander victims</li>
+            </ul>
+
+          </ul>
 
         </section>
         
@@ -140,7 +163,13 @@
 
         <section>
             <h3>Known Offenders Race and Ethnicity by Bias Motivation</h3>
-            <p>missing insights</p>
+            <p>From 2008 to 2013, the size of offender groups overall decreased, from a total 4,779 to a low of 3,165. In this time period, there was a significant drop in hate crime committed by unknown and white offenders, especially in the category Anti-Black or African American. After 2013, total racially and ethnically motivated crimes increase. In particular, we see: </p>
+            
+            <ul>
+              <li>Unknown Offender, Anti-Black or African American increase from 175 to 578</li>
+              <li>White Offender, Anti-Hispanic or Latino increase from 220 to 322</li>
+              <li>White Offender, Anti-Arab (which the FBI began tracking in 2015) increase from 25 to 62</li>
+            </ul>
         </section>
 
         <div id="vis"></div>
@@ -164,12 +193,27 @@
       
         </script>
 
+<h2>Conclusion</h2>
+
+<p>Our visualizations indicate that the overall trends of hate crime are watershed in 2015, the time when President Trump officially announced his running for the presidential election and started to vocalize his anti-immigrant and nationalistic ideas</p>
+<p>Since the objective of our visualization was to verify the effect of the Trump’s election on the hate crime, especially the racial hate crimes against Black American or Arab community, committed by supporting groups for Trump who are inspired by the Trump’s election, we can conclude that the upsurge of hate crimes have been aligned with the start of Trump administrations. </p>
+<p>However, it is unclear whether the insurgency of hate crime from 2015 is entirely attributed to the “Trump effect”. Our visualizations show a strong decrease trend in all types of hate crimes from 2008 to 2014 and upward trend again from 2015 to 2018 going back to the previous number of incidents, which can be interpreted as the “Obama effect”. We are not sure if the period from 2008 to 2014 was an exceptional time that the Democratic government’s </p>  
+  
+<p>To support our analysis further, we need to include the hate crime data before from 2003 which includes at least two different Democratic and and two Republic administrations to compare the changes before and after the current administration more objectively. </p>
+
+
 <h2>Citations</h2>
 
-<p>https://www.npr.org/2019/11/12/778542614/fbi-reports-dip-in-hate-crimes-but-rise-in-violence</p>
- 
+  <p>Visualizing Hate Crimes in the USA: Two Lenses of Understanding (<a href = "http
+  s://medium.com/grayandr/visualizing-hate-crimes-in-the-usa-two-lenses-of-understanding-92b6c86c8680">http
+  s://medium.com/grayandr/visualizing-hate-crimes-in-the-usa-two-lenses-of-understanding-92b6c86c8680</a>), Katherine Lordi, Medium</p>
 
-    </main>
+ <p>Trump Hate Map (<a href ="https://americasvoice.org/trumphatemap">https://americasvoice.org/trumphatemap</a>), America’s voice</p>
+
+ <p>“How America’s dying white supremacist movement is seizing on Donald Trump’s appeal”, Washington Post, Feb. 29, 2016</p>
+    
+
+</main>
 
 
     <footer>
