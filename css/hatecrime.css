@@ -6,9 +6,9 @@
     padding: 5vw;
   }
   
-  .project_display img {
+  /* .project_display img {
     width: 100%;
-  }
+  } */
 
 /* flex container for side-by-side */
 .flex-side-by-side{
@@ -21,11 +21,15 @@
   max-width: 50%;
 }
 
+#section{
+  max-width: 50%;
+}
+
 
 /* media queries for screen sizes */
 @media screen and (min-width:700px){
     .project_display {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     } 
     .slides img {
         height: 70vh;
@@ -34,6 +38,6 @@
 
   @media screen and (min-width:1500px){
     .project_display {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
