@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@5"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}}, "data": {"name": "data-c24a72487f5361f357b32fab73a59e6f"}, "mark": "area", "encoding": {"color": {"type": "nominal", "field": "Bias motivation"}, "tooltip": [{"type": "quantitative", "field": "no_crime"}, {"type": "nominal", "field": "Bias motivation"}], "x": {"type": "temporal", "field": "year"}, "y": {"type": "quantitative", "field": "no_crime", "title": "Number of Crime"}}, "$schema": "https://vega.github.io/schema/vega-lite/v3.4.0.json", "datasets": {"data-c24a72487f5361f357b32fab73a59e6f": [{"Bias motivation": "Race", "year": "2008", "no_crime": 4704}, {"Bias motivation": "Religion", "year": "2008", "no_crime": 1606}, {"Bias motivation": "Sexual Orientation", "year": "2008", "no_crime": 1617}, {"Bias motivation": "Ethnicity/National Origin", "year": "2008", "no_crime": 1148}, {"Bias motivation": "Disability", "year": "2008", "no_crime": 85}, {"Bias motivation": "Race", "year": "2009", "no_crime": 3816}, {"Bias motivation": "Religion", "year": "2009", "no_crime": 1376}, {"Bias motivation": "Sexual Orientation", "year": "2009", "no_crime": 1436}, {"Bias motivation": "Ethnicity/National Origin", "year": "2009", "no_crime": 1050}, {"Bias motivation": "Disability", "year": "2009", "no_crime": 97}, {"Bias motivation": "Race", "year": "2010", "no_crime": 3725}, {"Bias motivation": "Religion", "year": "2010", "no_crime": 1409}, {"Bias motivation": "Sexual Orientation", "year": "2010", "no_crime": 1470}, {"Bias motivation": "Ethnicity/National Origin", "year": "2010", "no_crime": 1040}, {"Bias motivation": "Disability", "year": "2010", "no_crime": 46}, {"Bias motivation": "Race", "year": "2011", "no_crime": 3465}, {"Bias motivation": "Religion", "year": "2011", "no_crime": 1318}, {"Bias motivation": "Sexual Orientation", "year": "2011", "no_crime": 1508}, {"Bias motivation": "Ethnicity/National Origin", "year": "2011", "no_crime": 891}, {"Bias motivation": "Disability", "year": "2011", "no_crime": 58}, {"Bias motivation": "Race", "year": "2012", "no_crime": 3297}, {"Bias motivation": "Religion", "year": "2012", "no_crime": 1166}, {"Bias motivation": "Sexual Orientation", "year": "2012", "no_crime": 1318}, {"Bias motivation": "Ethnicity/National Origin", "year": "2012", "no_crime": 822}, {"Bias motivation": "Disability", "year": "2012", "no_crime": 102}, {"Bias motivation": "Race", "year": "2013", "no_crime": 3407}, {"Bias motivation": "Religion", "year": "2013", "no_crime": 1163}, {"Bias motivation": "Sexual Orientation", "year": "2013", "no_crime": 1402}, {"Bias motivation": "Ethnicity/National Origin", "year": "2013", "no_crime": 794}, {"Bias motivation": "Disability", "year": "2013", "no_crime": 92}, {"Bias motivation": "Race", "year": "2014", "no_crime": 3081}, {"Bias motivation": "Religion", "year": "2014", "no_crime": 1092}, {"Bias motivation": "Sexual Orientation", "year": "2014", "no_crime": 1178}, {"Bias motivation": "Ethnicity/National Origin", "year": "2014", "no_crime": 790}, {"Bias motivation": "Disability", "year": "2014", "no_crime": 95}, {"Bias motivation": "Race", "year": "2015", "no_crime": 4029}, {"Bias motivation": "Religion", "year": "2015", "no_crime": 1354}, {"Bias motivation": "Sexual Orientation", "year": "2015", "no_crime": 1219}, {"Bias motivation": "Ethnicity/National Origin", "year": "2015", "no_crime": 710}, {"Bias motivation": "Disability", "year": "2015", "no_crime": 88}, {"Bias motivation": "Race", "year": "2016", "no_crime": 4229}, {"Bias motivation": "Religion", "year": "2016", "no_crime": 1538}, {"Bias motivation": "Sexual Orientation", "year": "2016", "no_crime": 1218}, {"Bias motivation": "Ethnicity/National Origin", "year": "2016", "no_crime": 696}, {"Bias motivation": "Disability", "year": "2016", "no_crime": 76}, {"Bias motivation": "Race", "year": "2017", "no_crime": 4832}, {"Bias motivation": "Religion", "year": "2017", "no_crime": 1679}, {"Bias motivation": "Sexual Orientation", "year": "2017", "no_crime": 1303}, {"Bias motivation": "Ethnicity/National Origin", "year": "2017", "no_crime": 837}, {"Bias motivation": "Disability", "year": "2017", "no_crime": 128}, {"Bias motivation": "Race", "year": "2018", "no_crime": 4954}, {"Bias motivation": "Religion", "year": "2018", "no_crime": 1550}, {"Bias motivation": "Sexual Orientation", "year": "2018", "no_crime": 1404}, {"Bias motivation": "Ethnicity/National Origin", "year": "2018", "no_crime": 961}, {"Bias motivation": "Disability", "year": "2018", "no_crime": 177}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

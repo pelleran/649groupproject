@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@5"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"width": 400, "height": 300, "strokeOpacity": 0}, "mark": {"tooltip": null}}, "data": {"name": "data-d8c8b6b93b537448880e20f0239a90b4"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "Type of crime"}, "column": {"type": "ordinal", "field": "Year"}, "tooltip": [{"type": "ordinal", "field": "Year"}, {"type": "nominal", "field": "Type of crime"}, {"type": "quantitative", "field": "Number of hate crimes reported"}], "x": {"type": "nominal", "axis": null, "field": "Type of crime", "title": null}, "y": {"type": "quantitative", "axis": {"grid": false}, "field": "Number of hate crimes reported"}}, "$schema": "https://vega.github.io/schema/vega-lite/v3.4.0.json", "datasets": {"data-d8c8b6b93b537448880e20f0239a90b4": [{"Year": 2008, "Number of hate crimes reported": 5542, "Type of crime": "Violent"}, {"Year": 2008, "Number of hate crimes reported": 3626, "Type of crime": "Nonviolent"}, {"Year": 2009, "Number of hate crimes reported": 4793, "Type of crime": "Violent"}, {"Year": 2009, "Number of hate crimes reported": 3543, "Type of crime": "Nonviolent"}, {"Year": 2010, "Number of hate crimes reported": 4824, "Type of crime": "Violent"}, {"Year": 2010, "Number of hate crimes reported": 2875, "Type of crime": "Nonviolent"}, {"Year": 2011, "Number of hate crimes reported": 4623, "Type of crime": "Violent"}, {"Year": 2011, "Number of hate crimes reported": 2631, "Type of crime": "Nonviolent"}, {"Year": 2012, "Number of hate crimes reported": 3968, "Type of crime": "Violent"}, {"Year": 2012, "Number of hate crimes reported": 2750, "Type of crime": "Nonviolent"}, {"Year": 2013, "Number of hate crimes reported": 4430, "Type of crime": "Violent"}, {"Year": 2013, "Number of hate crimes reported": 2503, "Type of crime": "Nonviolent"}, {"Year": 2014, "Number of hate crimes reported": 4048, "Type of crime": "Violent"}, {"Year": 2014, "Number of hate crimes reported": 2370, "Type of crime": "Nonviolent"}, {"Year": 2015, "Number of hate crimes reported": 4482, "Type of crime": "Violent"}, {"Year": 2015, "Number of hate crimes reported": 2403, "Type of crime": "Nonviolent"}, {"Year": 2016, "Number of hate crimes reported": 4720, "Type of crime": "Violent"}, {"Year": 2016, "Number of hate crimes reported": 2601, "Type of crime": "Nonviolent"}, {"Year": 2017, "Number of hate crimes reported": 5084, "Type of crime": "Violent"}, {"Year": 2017, "Number of hate crimes reported": 3353, "Type of crime": "Nonviolent"}, {"Year": 2018, "Number of hate crimes reported": 5566, "Type of crime": "Violent"}, {"Year": 2018, "Number of hate crimes reported": 2930, "Type of crime": "Nonviolent"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
